@@ -32,8 +32,8 @@ function counterReducer(state = initialState, action) {
 // create redux store
 const store = Redux.createStore(counterReducer);
 const render = () => {
-    const newState = store.getState();
-    counterEl.innerText = newState.value;
+    const state = store.getState();
+    counterEl.innerText = state.value.toString();
 }
 
 store.subscribe(render);
