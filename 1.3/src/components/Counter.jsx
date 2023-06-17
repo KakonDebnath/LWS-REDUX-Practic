@@ -10,7 +10,7 @@ const Counter = ({id, increment, decrement, count}) => {
             <Count count={count}/>
             <div className="flex space-x-3">
                 <Button handler={()=>increment(id)} bgColor={'bg-indigo-400'}>Increment</Button>
-                <Button handler={()=>decrement(id)} bgColor={'bg-red-400'}>Increment</Button>
+                <Button handler={()=>decrement(id)} bgColor={'bg-red-400'}>Decrement</Button>
             </div>
         </div>
     );

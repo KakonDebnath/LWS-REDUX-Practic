@@ -37,14 +37,14 @@ const App = () => {
       if (c.id === id) {
         return {
           ...c,
-          count: c.count - 1
+          count: c.count - 1,
         }
       }
       return {
         ...c,
       }
     })
-    console.log(updatedCounter);
+    setState(updatedCounter);
   }
 
   return (
