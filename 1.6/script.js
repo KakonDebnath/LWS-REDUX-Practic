@@ -23,9 +23,7 @@ function counterReducer(state = initialState, action) {
             value: state.value - 1,
         }
     } else {
-        return {
-            state
-        }
+        return state ;
     }
 };
 
