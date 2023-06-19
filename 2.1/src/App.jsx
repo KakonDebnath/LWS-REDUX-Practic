@@ -5,6 +5,7 @@ import HooksCounter from './components/HooksCounter'
 import {Provider} from "react-redux"
 import store from './redux/store';
 import DynamicCounter from './components/DynamicCounter';
+import VariableCounter from './components/VariableCounter';
 
 function App() {
 
@@ -22,6 +23,8 @@ function App() {
         {/* <Counter id={1} /> */}
         <HooksCounter></HooksCounter>
         <DynamicCounter></DynamicCounter>
+        <VariableCounter></VariableCounter>
+        <VariableCounter dynamic></VariableCounter>
       </div>
     </div>
     </Provider>
